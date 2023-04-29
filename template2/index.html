@@ -94,7 +94,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                             <input type="file" id="icon_img2"><br><br>
                             <input type="file" id="icon_img3">
                             <div class="w3_sub">
-                                <input type="button" value="REFRESH">  <input type="button" id="clear" value="CLEAR">
+                                <input type="button" id="refresh" value="REFRESH">  <input type="button" id="clear" value="CLEAR">
                      
                              
                             </div>
@@ -478,6 +478,15 @@ License URL: http://creativecommons.org/licenses/by/3.0/
        window.location.reload(true);
      })
    /*------------end-------------------*/
+	
+	/*--------- refresh button----------------*/
+  
+     var refresh = document.getElementById("refresh")
+     clear.addEventListener("click",()=>{
+       window.location.reload(true);
+     })
+   /*------------end-------------------*/
+	
 /*--------- download button--------------*/
   
      var download = document.getElementById("download")
